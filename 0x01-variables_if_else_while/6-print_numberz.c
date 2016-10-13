@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	int a = '1';
+	int a = '0';
 	int b = 0;
 
-	while (b < 9)
+	while (b < 10)
 	{
 		putchar(a);
 		a++;
