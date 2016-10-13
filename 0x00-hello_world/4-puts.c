@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
   * main - prints a line
   * Description: still prints a fancy line
@@ -7,11 +8,11 @@
   */
 int main(void)
 {
-	char str1[80];
+	char string1[80];
 
-	strcpy(str1, "\"Programming is like building a multilingual puzzle\n");
+	strcpy(string1, "\"Programming is like building a multilingual puzzle\n");
 
-	puts(str1);
+	puts(string1);
 
 	return (0);
 }
