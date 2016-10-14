@@ -1,40 +1,48 @@
 #include <stdio.h>
 
 /**
- *main - print 0 to 99
- *Description: prints all 0 to 99 individually with without duplicate numbers.
- *header section: problem 10
+ *main - print 000 to 999
+ *Description: prints all 000 to 999 individually
+ * with without duplicate numbers.
+ *header section: problem 11
  *Return: returns 0
  */
 
 int main(void)
 {
-	int a = 0;
-	int b, c;
-	int n = 1;
+	int hundo = 0;
+	int tens, ones;
+	int tenscount = 0;
+	int onescount = 0;
+	int countcount = 0;
 
-	while (a <= 9)
+	while (hundo <= 7)
 	{
-		b = n;
-		while (b <= 8)
+		countcount++;
+		tenscount++;
+		onescount = countcount;
+		tens = tenscount;
+		ones = onescount;
+
+		while (tens <= 8)
 		{
-			c = n + 1;
-			while (c <= 9)
+			onescount++;
+			ones = onescount;
+			while (ones <= 9)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-				if (!((a == 7) && (b == 8 && (c == 9))))
+				putchar(hundo + '0');
+				putchar(tens + '0');
+				putchar(ones + '0');
+				if (!((hundo == 7) && (tens == 8 && (ones == 9))))
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				c++;
+				ones++;
 			}
-			b++;
+			tens++;
 		}
-		a++;
-		n++;
+		hundo++;
 	}
 	putchar('\n');
 	return (0);
