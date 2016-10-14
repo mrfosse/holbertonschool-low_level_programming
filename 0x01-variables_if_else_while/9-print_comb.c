@@ -14,9 +14,10 @@ int main(void)
 
 	while (b < 10)
 	{
-		if (a != '9')
+
+		putchar(a);
+		if (a < '9')
 		{
-			putchar(a);
 			putchar(',');
 			putchar(' ');
 			a++;
@@ -24,11 +25,10 @@ int main(void)
 		}
 		else
 		{
-			putchar(a);
 			a++;
 			b++;
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
