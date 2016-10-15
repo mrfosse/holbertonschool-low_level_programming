@@ -10,14 +10,12 @@
 
 int main(void)
 {
-	int hundo, tens, ones, tenscount, onescount, countcoun;
-
-	hundo = 0;
-	tens = 0;
-	ones = 0;
-	tenscount = 0;
-	onescount = 0;
-	countcount = 0;
+	int hundo = 0;
+	int tens = 0;
+	int ones = 0;
+	int tenscount = 0;
+	int onescount = 0;
+	int countcount = 0;
 
 	while (hundo <= 7)
 	{
