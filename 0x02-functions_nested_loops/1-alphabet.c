@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
-  * main - prints the alphabet
-  * Description: prints the alphabet using _putschar
-  * Return: Always 0.
-  */
-
+ * print_alphabet - uses _putchar to print a-z.
+ * Description: prints each letter of the alphabet.i
+ * Return: returns nothing.
+ */
 void print_alphabet(void)
 {
 	int i;
