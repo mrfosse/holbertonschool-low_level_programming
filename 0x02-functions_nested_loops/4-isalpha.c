@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check to see if letters.
+ * _isalpha - check to see if letters.
  * Description: checks for lowercase and upercase by using _isalpha
- *
+ * @c: c is the charater being checked.
  * Return: returns 1 if c is lowercase or upper, 0 otherwise
  */
-
 int _isalpha(int c)
 {
 
@@ -14,7 +13,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else if ((c >= 65) && (c <=90))
+	else if ((c >= 65) && (c <= 90))
 	{
 		return (1);
 	}
@@ -22,6 +21,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-	
 
 }

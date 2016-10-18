@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check to see if positive or negative.
+ * print_sign - check to see if positive or negative.
  * Description: checks value for + or - or 0.
- *
+ * @n: n is the number being checked.
  * Return: returns 1 for positive, 0 for 0, and -1 for negative.
  */
-
 int print_sign(int n)
 {
 
@@ -25,6 +24,5 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-	
 
 }
