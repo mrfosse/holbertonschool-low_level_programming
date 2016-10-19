@@ -17,11 +17,8 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				x = a * b;
-
 				if (b == 0)
-				{
 					_putchar(48 + x);
-				}
 				else if (x < 10)
 				{
 					_putchar(' ');
@@ -37,17 +34,15 @@ void print_times_table(int n)
 				else
 				{
 					_putchar(48 + ((x / 10) / 10));
-					_putchar(((x / 10) % 10) + 48 );
-                                        _putchar(48 + (x % 10));
+					_putchar(((x / 10) % 10) + 48);
+					_putchar(48 + (x % 10));
 				}
 				if (b ==  n)
-				{
-					_putchar('\n');	
-				}
+					_putchar('\n');
 				else
 				{
 					_putchar(',');
-                                        _putchar(' ');
+					_putchar(' ');
 				}
 			}
 		}
