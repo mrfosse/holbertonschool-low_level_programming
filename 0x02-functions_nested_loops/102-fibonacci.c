@@ -17,7 +17,7 @@ int main(void)
 
 	printf("%ld, %ld, ", a, b);
 
-	while (x < 50)
+	while (x < 48)
 	{
 		sum = a + b;
 		a = b;
