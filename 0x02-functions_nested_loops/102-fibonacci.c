@@ -23,7 +23,7 @@ int main(void)
 		a = b;
 		b = sum;
 		printf("%ld", sum);
-		if ( x < 49)
+		if (x < 49)
 		{
 			printf(", ");
 		}
