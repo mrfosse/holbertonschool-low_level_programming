@@ -17,12 +17,16 @@ int main(void)
 
 	printf("%ld, %ld, ", a, b);
 
-	while (x < 48)
+	while (x < 50)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%ld, ", sum);
+		printf("%ld", sum);
+		if ( x < 49)
+		{
+			printf(", ");
+		}
 		x++;
 	}
 	return (0);
