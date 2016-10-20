@@ -15,8 +15,6 @@ int main(void)
 	x = 0;
 	sum = 0;
 
-	printf("%ld, %ld, ", a, b);
-
 	while (x < 50)
 	{
 		sum = a + b;
