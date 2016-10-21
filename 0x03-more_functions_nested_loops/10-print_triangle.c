@@ -23,7 +23,7 @@ void print_triangle(int size)
 				counter = (size - a);
 				if (counter > b + 1)
 				{
-					_putchar('.');
+					_putchar(' ');
 				}
 				else
 				{
