@@ -4,9 +4,9 @@
 /**
  * main - fizz buzz to 100
  * Description: same as above
- * Return: returns none.
+ * Return: returns 0.
  */
-void main()
+int main(void)
 {
 	int a;
 
@@ -14,7 +14,7 @@ void main()
 	while (a <= 100)
 	{
 		if ((a % 3 == 0) && (a % 5 == 0))
-			printf("Fizzbuzz");
+			printf("FizzBuzz");
 		else if (a % 5 == 0)
 			printf("Fizz");
 		else if (a % 3 == 0)
@@ -23,5 +23,8 @@ void main()
 			printf("%d", a);
 		if (!(a == 100))
 			printf(" ");
+		a++;
 	}
+	printf("\n");
+	return (0);
 }
