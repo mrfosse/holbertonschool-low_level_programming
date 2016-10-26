@@ -11,31 +11,19 @@ void rev_string(char *s)
 
 	count = 0;
 	countd = 0;
+	temp = 0;
 	while (s[count] != '\0')
 	{
 		count++;
 	}
-	_putchar(count);
-	_putchar('\n');
-	_putchar('\n');
-
+	count = count - 1;
 	while (count > countd)
 	{
-		temp = *s[countd];
-		*s[countd] = *s[count];
-		*s[count] = temp;
-
-		_putchar(temp);
-		_putchar('\n');
-		_putchar(s[count]);
-		_putchar('\n');
-		_putchar(s[countd]);
-		_putchar('\n');
-		_putchar('\n');
+		temp = s[countd];
+		s[countd] = s[count];
+		s[count] = temp;
 
 		countd++;
 		count--;
-		
 	}
-	
 }
