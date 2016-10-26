@@ -20,7 +20,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	count = count + 1;
 
-	while (count2 <= count)
+	while (count2 < count)
 	{
 		dest[count2] = src[count2];
 		count2++;
