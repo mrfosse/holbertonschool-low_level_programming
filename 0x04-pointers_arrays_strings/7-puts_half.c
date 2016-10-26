@@ -9,7 +9,7 @@ void puts_half(char *str)
 {
 	int count, count2;
 
-	count = 1;
+	count = 0;
 	while (str[count] != '\0')
 	{
 		count++;
@@ -20,7 +20,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		count2 = (count - 1) / 2;
+		count2 = (count + 1) / 2;
 	}
 	while (count2 < count)
 	{
