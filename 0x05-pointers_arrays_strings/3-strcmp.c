@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * _strncmp - compares two strings.
- * Description: compares string 1 to string 2
+ * _strcmp - compares two strings.
+ * Description: compares string 1 to string 2 by ascii subtraction.
  * @s1: string 1
  * @s2: string 2
- * Return: returns the string dest.
+ * Return: returns s1 - s2.
  */
 int _strcmp(char *s1, char *s2)
 {
