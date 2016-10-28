@@ -1,12 +1,13 @@
 #include "holberton.h"
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * Description: overrights the firsts string's \n, add a new one.
  * @src: string to add to the end of dest.
  * @dest: string to be amended to.
+ * @n: number of bytes to copy.
  * Return: returns the string dest.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int count;
 	int count2;
@@ -19,13 +20,13 @@ char *_strcat(char *dest, char *src)
 		count++;
 	}
 	count++;
-	while (src[count2] != '\0')
+	while (count2 <= n && src[count2] != '\0')
 	{
 		dest[count] = src[count2];
 		count++;
 		count2++;
 	}
-	count2++;
+	count++;
 	dest[count] = '\0';
 
 	return (dest);
