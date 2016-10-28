@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strncat - copies a string.
+ * _strncpy - copies a string.
  * Description: copies source to destination
  * @src: string to copy to  dest.
  * @dest: string to be copied to.
