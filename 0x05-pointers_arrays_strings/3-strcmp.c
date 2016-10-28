@@ -1,25 +1,17 @@
 #include "holberton.h"
 /**
- * _strncat - copies a string.
- * Description: copies source to destination
- * @src: string to copy to  dest.
- * @dest: string to be copied to.
- * @n: number of bytes to copy.
+ * _strncmp - compares two strings.
+ * Description: compares string 1 to string 2
+ * @src: string 1
+ * @dest: string 2
  * Return: returns the string dest.
  */
 int _strcmp(char *s1, char *s2)
 {
-	int count;
-
-	count = 0;
-
-	while (dest[count] != '\0' && count <= n)
+	while (*s1 == *s2 && *s1 != '\0' && *s2 != '\0')
 	{
-		dest[count] = src[count];
-		count++;
+		s1++;
+		s2++;
 	}
-	count++;
-	dest[count] = '\0';
-
-	return (dest);
+	return (*s1 - *s2);
 }
