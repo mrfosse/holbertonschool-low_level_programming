@@ -2,8 +2,8 @@
 /**
  * _strncmp - compares two strings.
  * Description: compares string 1 to string 2
- * @src: string 1
- * @dest: string 2
+ * @s1: string 1
+ * @s2: string 2
  * Return: returns the string dest.
  */
 int _strcmp(char *s1, char *s2)
