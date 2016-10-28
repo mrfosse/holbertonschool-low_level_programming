@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * cap_sting - makes first letter of each word capital.
+ * cap_string - makes first letter of each word capital.
  * Description: see above
  * @p: array to change
  * Return: returns the array
