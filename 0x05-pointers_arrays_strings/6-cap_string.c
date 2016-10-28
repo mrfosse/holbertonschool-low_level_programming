@@ -13,10 +13,10 @@ char *cap_string(char *p)
 
 	while (p[count] != '\0')
 	{
-		if (p[count] == ' '|| p[count] == ',' || p[count] == ';'
+		if (p[count] == ' ' || p[count] == ',' || p[count] == ';'
 || p[count] == '.' || p[count] == '!' || p[count] == '?' || p[count] == '"'
 || p[count] == '(' || p[count] == ')' || p[count] == '{' || p[count] == '}'
-|| p[count] == '\t'|| p[count] == '\n')
+|| p[count] == '\t' || p[count] == '\n')
 		{
 			if (p[count + 1] >= 'a' && p[count + 1] <= 'z')
 			{
