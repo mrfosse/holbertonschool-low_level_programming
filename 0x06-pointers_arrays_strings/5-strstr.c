@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strstr - searches a string for a substring
  * Description: searches for any matching segments.
@@ -29,5 +30,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack = b + 1;
 	}
-	return ('\0');
+	return ('NULL');
 }

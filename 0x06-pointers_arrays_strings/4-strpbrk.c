@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.g>
 /**
  * _strpbrk - searches a string for any of a set of bytes
  * Description: searches for any matching segments.
@@ -27,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (*s == '\0')
 	{
-		return ('\0');
+		return ('NULL');
 	}
 	return (s);
 }
