@@ -2,8 +2,8 @@
 /**
  * _strstr - searches a string for a substring
  * Description: searches for any matching segments.
- * @s: string 1 to be looked through.
- * @accept: string 2 to compare to string 1
+ * @haystack: string 1 to be looked through.
+ * @needle: string 2 to compare to string 1
  * Return: returns pointer when matching, otherwise null.
  */
 char *_strstr(char *haystack, char *needle)
@@ -17,7 +17,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		a = needle;
 		b = haystack;
-		while (*haystack == *a && *haystack != '\0' 
+		while (*haystack == *a && *haystack != '\0'
 			&& *a != '0')
 		{
 			haystack++;
@@ -25,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*a == '\0')
 		{
-			return(b);
+			return (b);
 		}
 		haystack = b + 1;
 	}
