@@ -2,6 +2,25 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
+ * _strlen - measures the length of a string.
+ * Descritpion: measures the string s.
+ * @s: string to be messured/
+ * Return: returns length of s.
+ */
+int _strlen(char *s)
+{
+	int count;
+
+	count = 0;
+	while (s[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+
+}
+
+/**
  * _strdup - duplicates a string
  * Description: and returns the new pointer.
  * @str: string to be coppied..
@@ -9,16 +28,17 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int count;
+	unsigned int count, length;
 	char *a;
 
-	a = malloc(sizeof(str) + 1);
+	length = _strlen(str);
+	a = malloc(length + 1);
 	if (a == NULL)
 	{
 		return (NULL);
 	}
 	count = 0;
-	while (count <= sizeof(str))
+	while (count <= length)
 	{
 		a[count] = str[count];
 		count++;
