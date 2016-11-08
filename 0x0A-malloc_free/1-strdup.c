@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	unsigned int count;
 	char *a;
 
-	a = malloc(sizeof(str));
+	a = malloc(sizeof(str) + 1);
 	if (a == NULL)
 	{
 		return (NULL);
@@ -23,6 +23,6 @@ char *_strdup(char *str)
 		a[count] = str[count];
 		count++;
 	}
+	a[count] = '\0';
 	return (a);
-	free(a);
 }
