@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * _strdup - duplicates a string
- * Description: and returns the new pointer.
+ * create_array - creates an array of chars.
+ * Description: and that initializes it with a specific char.
  * @str: string to be coppied..
  * Return: returns the pointer or NULL if it fails.
  */
