@@ -8,18 +8,22 @@
  * @size: size of mem
  * Return: returns s oterwise NULL
  */
-void *_calloc(unsigned int nmemb, unsigned int size);
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *s;
 	unsigned int count, n;
 
 	if (nmemb == 0 || size == 0)
-		return(NULL):
-
+	{
+		return (NULL);
+	}
 	n = nmemb * size;
 	s = malloc(n);
 	if (s == NULL)
-		return(NULL);
+	{
+		return (NULL);
+	}
+
 	count = 0;
 	while (count < n)
 	{
