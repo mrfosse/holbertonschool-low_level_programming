@@ -39,6 +39,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	while (count < old_size)
 	{
 		string[count] = temp[count];
+		count++;
 	}
 	free(ptr);
 	return (string);
