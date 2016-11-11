@@ -5,7 +5,7 @@
  * Description: see above
  * @s1: string 1
  * @s2: string 2
- * @n: size
+ * @n: amount to take from string 2
  * Return: returns s otherwise NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -29,9 +29,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		k = count + n;
 
 	s = malloc((k + 1) * sizeof(*s));
-	count = 0;
 	if (s == NULL)
 		return (NULL);
+	count = 0;
 	while (s1[count] != '\0')
 	{
 		s[count] = s1[count];
