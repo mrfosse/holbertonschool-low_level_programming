@@ -10,6 +10,7 @@ int _putchar(char c);
  * @owner: who owns the dog.
  *
  */
+
 struct dog
 {
 	char *name;
