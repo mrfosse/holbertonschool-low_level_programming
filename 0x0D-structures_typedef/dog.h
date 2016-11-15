@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- * dog - my first stuct
+ * struct dog - my first stuct
  *
  * @name: name of dog
  * @age: age of dog
