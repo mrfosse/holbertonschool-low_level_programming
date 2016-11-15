@@ -9,7 +9,6 @@
  * @owner: owner of the dog
  * Return: none.
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
