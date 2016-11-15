@@ -1,6 +1,25 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
+ *  * _strlen - measures the length of a string.
+ *   * Descritpion: measures the string s.
+ *    * @s: string to be messured/
+ *     * Return: returns length of s.
+ *      */
+int _strlen(char *s)
+{
+	int count;
+
+	count = 0;
+	while (s[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+
+}
+
+/**
  * new_dog - makes a new inits the dog structure
  *
  * @name: name of the dog
@@ -15,21 +34,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	temp = malloc(sizeof(dog_t));
 
-	if (temp != NULL)
+	if (temp == NULL)
 	{
-		temp->name = name;
-		temp->age = age;
-		temp->owner = owner;
-		return (temp);
-		free(temp->name);
-		free(temp->owner);
-		free(temp);
+		return (NULL);
 	}
-	else
+	temp->name = name;
+	if (_strlen(temp->name) == 0)
+	{
+		free(temp->name);
+		free(temp);
+		return (NULL);
+	}
+	temp->age = age;
+	temp->owner = owner;
+	if (_strlen(temp->owner) == 0)
 	{
 		free(temp->name);
 		free(temp->owner);
 		free(temp);
 		return (NULL);
 	}
+	return (temp);
 }
