@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 	if (p == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 	printf("%d\n", p(num1, num2));
 	return (0);
