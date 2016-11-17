@@ -8,21 +8,23 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	int count;
-	int (*funcarray[5])(int, int);
-	char operation[5] = { '+', '-', '*', '/', '%' };
-	funcarray[0] = op_add;
-	funcarray[1] = op_sub;
-	funcarray[2] = op_mul;
-	funcarray[3] = op_div;
-	funcarray[4] = op_mod;
-	count = 0;
+	op_t ops[] = {
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+	};
 
-	while (operation[count] != '\0')
+	int i;
+
+	i = 0;
+	while (ops[i][1] != NULL)
 	{
-		if (s == operation[count])
-			return (funcarray[count]);
-		count++;
+		if (s == ops[i][1])
+			return (ops[i][2]);
+		i++;
 	}
 	return (NULL);
 }

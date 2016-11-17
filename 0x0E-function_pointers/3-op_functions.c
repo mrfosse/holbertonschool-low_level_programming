@@ -20,16 +20,6 @@ int op_sub(int a, int b)
 	return (a - b);
 }
 /**
- * op_add - adds int a to int b.
- * @a: int one
- * @b: int two
- * Return: sum of a and b
- */
-int op_add(int a, int b)
-{
-	return (a + b);
-}
-/**
  * op_mul - multiples int a to int b.
  * @a: int one
  * @b: int two
