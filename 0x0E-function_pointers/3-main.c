@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * main - makes sure arguments are correct and calls a func
  * @argc: number of arguments
@@ -30,6 +31,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return(100);
 	}
-	prinft("%d\n", p(num1, num1));
+	printf("%d\n", p(num1, num1));
 	return (0);
 }

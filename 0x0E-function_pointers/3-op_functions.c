@@ -1,3 +1,4 @@
+#include "3-calc.h"
 /**
  * op_add - adds int a to int b.
  * @a: int one
