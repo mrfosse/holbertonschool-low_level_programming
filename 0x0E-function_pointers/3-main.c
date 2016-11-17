@@ -20,18 +20,18 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit (98);
 	}
 	if (p == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		return (99);
+		exit (99);
 	}
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
 	{
 		printf("Error\n");
-		return (100);
+		exit (100);
 	}
-	printf("%d\n", p(num1, num1));
+	printf("%d\n", p(num1, num2));
 	return (0);
 }
