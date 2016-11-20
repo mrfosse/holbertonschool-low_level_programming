@@ -12,12 +12,11 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_f;
 
-char op_char(int a, int b);
+char op_char(i`nt a, int b);
 int op_integer (int a, int b);
 float op_float(int a, int b);
-char op_char *(int a, int b);
+char op_string *(int a, int b);
 
-int (*get_func(char *s))(int, int);
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
