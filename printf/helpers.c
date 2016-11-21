@@ -116,3 +116,7 @@ void print_string(va_list c, char *s)
                 p = "(nil)";
         printf("%s%s", s, p);
 }
+void print_percent(va_list, char *s)
+{
+	_putchar('%');
+}
