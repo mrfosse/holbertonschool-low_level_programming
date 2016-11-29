@@ -4,7 +4,7 @@
 /**
  * add_node - prints all elements of the linked list.
  * @head: pointer to first node.
- * @str: not sure yet, pointer to something
+ * @str: pointer to the element to be added.
  * Return: returns adress of new node, NULL if failed
  */
 list_t *add_node(list_t **head, const char *str)
@@ -22,9 +22,8 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	p[count] = '\0';
 
-	temp = malloc(sizeof(list_t));
-	
 
+	temp = malloc(sizeof(list_t));
 	temp->str = p;
 	temp->len = count;
 	temp->next = *head;
