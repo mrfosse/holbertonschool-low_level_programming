@@ -1,0 +1,34 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
+/**
+ * add_node - prints all elements of the linked list.
+ * @head: pointer to first node.
+ * @str: not sure yet, pointer to something
+ * Return: returns adress of new node, NULL if failed
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+	list_t *temp;
+	char *p;
+	int count;
+
+	count = 0;
+	p = malloc(sizeof(str));
+	while (str[count] != '\0')
+	{
+		p[count] = str[count];
+		count++;
+	}
+	p[count] = '\0';
+
+	temp = malloc(sizeof(list_t));
+	
+
+	temp->str = *str;
+	temp->len = count;
+	temp->next = *head;
+	*head = temp;
+	
+	return (temp); 
+}
