@@ -3,7 +3,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * add_node - prints all elements of the linked list.
+ * add_node - adds node to the begging of the list.
  * @head: pointer to first node.
  * @str: pointer to the element to be added.
  * Return: returns adress of new node, NULL if failed
