@@ -5,6 +5,7 @@
  *
  * @head: pointer to the start of the list.
  * @index: where to place node
+ * @n: value to add.
  * Return: returns value of new node, or NULL if fail.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
