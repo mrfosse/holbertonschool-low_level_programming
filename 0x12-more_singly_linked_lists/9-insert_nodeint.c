@@ -19,7 +19,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	if (new_node == NULL)
 		return (NULL);
 
-	while (temp != NULL && count < index -1)
+	while (temp != NULL && count < index - 1)
 	{
 		temp = temp->next;
 		count++;
