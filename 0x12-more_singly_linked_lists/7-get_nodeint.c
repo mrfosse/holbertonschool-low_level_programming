@@ -1,26 +1,25 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint2 - frees the list.
+ * get_nodeint_at_index - returns value of node and index postition.
  *
  * @head: pointer to the start of the list.
- * Return: returns none.
+ * @index: which node to return
+ * Return: returns value of node at index position.
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
-void free_listint2(listint_t **head)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *temp, *temp2;
+	unsigned int count;
 
-	if (head == NULL || *head == NULL)
-		return;
+	count = 0;
 
-	temp = *head;
-	while (temp != NULL)
+	while (count != index)
 	{
-		temp2 = temp;
-		temp = temp->next;
-		free(temp2);
+		if (head == NULL)
+			return (0);
+		head = head->next;
+		count++;
 	}
-
-	*head = NULL;
+	
+	return (head);
 }
