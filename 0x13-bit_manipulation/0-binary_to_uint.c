@@ -30,9 +30,10 @@ unsigned int binary_to_uint(const char *b)
 	}
 	
 	count = 0;
+	number = 0;
 	while (b[count] != '\0')
 	{
-		number = (number<<1) | b[count];
+		number = (number << 1) | (b[count] - 48);
 		count++;
 	}
 	return (number);
