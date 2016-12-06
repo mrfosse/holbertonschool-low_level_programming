@@ -11,11 +11,11 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int mask, count;
 	int flag;
-	
+
 	flag = 0;
 	count = 0;
 	mask = 32768;
-	
+
 	while (flag == 0)
 	{
 		if ((n & mask) == 0)
@@ -33,8 +33,8 @@ int get_bit(unsigned long int n, unsigned int index)
 		count++;
 	}
 	if ((n & mask) == 0)
-		return(0);
+		return (0);
 	else
-		return(1);
+		return (1);
 }
 
