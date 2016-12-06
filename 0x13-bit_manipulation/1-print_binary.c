@@ -23,14 +23,14 @@ void print_binary(unsigned long int n)
 		if (flag == 1)
 		{
 			if ((n & mask) == 0)
-				printf("0");
+				_putchar('0');
 			else
-				printf("1");
+				_putchar('1');
 		}
 
 		mask = mask >> 1;
 	}
 	if (flag == 0)
-		printf("0");
+		_putchar('0');
 }
 
