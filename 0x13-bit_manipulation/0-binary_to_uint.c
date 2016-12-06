@@ -13,19 +13,13 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int number;
 
 	if (b == NULL)
-	{
-		printf("failed 1st check");
 		return (0);
-	}
 
 	count = 0;
 	while (b[count] != '\0')
 	{
 		if (b[count] != '0' && b[count] != '1')
-		{
-			printf("failed 2nd check");
 			return (0);
-		}
 		count++;
 	}
 
