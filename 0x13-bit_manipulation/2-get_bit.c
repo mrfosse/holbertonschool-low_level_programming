@@ -26,7 +26,11 @@ int get_bit(unsigned long int n, unsigned int index)
 			break;
 		}
 		mask = mask >> 1;
+		count++;
 	}
+	if (count + index > 16)
+		return (-1);
+	count = 0;
 	while (count < index)
 	{
 		mask = mask >> 1;
