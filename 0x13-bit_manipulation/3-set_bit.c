@@ -1,25 +1,22 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * get_bit - prints the bit from given index.
+ * set_bit - toggles the bit at given index.
  *
  * @n: number to check
- * @index: postion of bit to return
- * Return: returns bit at index postion.
+ * @index: postion of bit to toggle
+ * Return: returns 1, else -1 on fail.
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int bit;
 	unsigned long int number;
 
 	
-	n ^= 1 << index;
-	bit = (n >> index) & 1;
+	number = 1 << index;
+
+	*n = *n | number;
 	
-	if (bit == 1)
-		return (1);
-	else
-		return (-1);
+	return (1);
 
 }
 
