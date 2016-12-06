@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		printf("failed 1st check");
 		return (0);
-	}	
+	}
 
 	count = 0;
 	while (b[count] != '\0')
@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		count++;
 	}
-	
+
 	count = 0;
 	number = 0;
 	while (b[count] != '\0')
