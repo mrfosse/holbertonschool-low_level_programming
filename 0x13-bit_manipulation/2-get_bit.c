@@ -14,7 +14,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	flag = 0;
 	count = 0;
-	mask = 32768;
+	mask = 4611686018427387904;
 
 	while (flag == 0)
 	{
@@ -28,7 +28,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		mask = mask >> 1;
 		count++;
 	}
-	if (count + index > 16)
+	if (count + index > 64)
 		return (-1);
 	count = 0;
 	while (count < index)
