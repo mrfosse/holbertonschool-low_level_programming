@@ -28,7 +28,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		mask = mask >> 1;
 		count++;
 	}
-	if (count + index > 64)
+	if (index > 64)
 		return (-1);
 	count = 0;
 	while (count < index)
