@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * flip_bit - switches the bit N to M.
+ * flip_bits - switches the bit N to M.
  *
  * @n: number to flip.
  * @m: number to flip to.
@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int holder;
 	unsigned int count;
-	
+
 	holder = n ^ m;
 	count = 0;
 
