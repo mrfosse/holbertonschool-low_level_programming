@@ -19,23 +19,15 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	count = 0;
-	printf("%d\n", count);
 	while (text_content[count] != '\0')
 	{
 		count++;
-		printf("%d\n", count);
 	}
-	printf("%d, last before print\n", count);
+
 	temp = write(fd, text_content, count);
-	printf("%c\n", temp);
 	close(fd);
 	if (temp == -1)
-	{
-		
 		return (-1);
-	}
 	else
-	{
 		return (1);
-	}
 }
