@@ -9,31 +9,34 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, temp, count;
+	int fd;
+	ssize_t temp, count;
 
 	if (filename == NULL)
 		return (-1);
-/**	if (text_content == NULL)
-*	{
-*		fd = fopen(filename, "a+");
-*		close(fd);
-*		return (1);
-*	}
-*/
-	fd = open(filename, O_RDWR | O_CREAT, 0600);
+
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
+
+	if (text_content == NULL)
+	{
+		close(fd);
+		return (1);
+	}
 
 	count = 0;
 	while (text_content[count] != '\0')
 	{
 		count++;
 	}
+	if (count > 0)
+		temp = write(fd, text_content, count);
 
-	temp = write(fd, text_content, count);
-	close(fd);
 	if (temp == -1)
+		close(fd);
 		return (-1);
-	else
-		return (1);
+
+	close(fd);
+	return (1);
 }
