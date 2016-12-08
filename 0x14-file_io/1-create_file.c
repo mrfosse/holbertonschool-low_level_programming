@@ -36,6 +36,9 @@ int create_file(const char *filename, char *text_content)
 	if (temp == -1)
 		close(fd);
 		return (-1);
+	if (count != temp)
+		close(fd);
+		return(-1);
 
 	close(fd);
 	return (1);
