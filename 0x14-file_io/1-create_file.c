@@ -28,15 +28,14 @@ int create_file(const char *filename, char *text_content)
 	printf("%d, last before print\n", count);
 	temp = write(fd, text_content, count);
 	printf("%c\n", temp);
-	
+	close(fd);
 	if (temp == -1)
 	{
-		close(fd);
+		
 		return (-1);
 	}
 	else
 	{
-		close(fd);
 		return (1);
 	}
 }
