@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * create_file - reads a text file and prints to POSIX stdout.
+ * create_file - creates a text file.
  *
  * @filename: file to be written to.
  * @text_content: text to be written to file.
