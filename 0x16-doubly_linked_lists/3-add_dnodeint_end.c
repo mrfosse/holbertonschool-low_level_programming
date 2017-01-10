@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - prints all elemets of a double linked list.
+ * add_dnodeint_end - adds an elemets to the end of a linked list.
  * @head: pointer to first node of the list.
  * @n: data to be added.
  * Return: returns the adress of the new node, NULL if failed.

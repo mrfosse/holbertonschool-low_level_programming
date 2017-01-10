@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - prints all elemets of a double linked list.
+ * add_dnodeint - adds an element to the start of a linked list.
  * @head: pointer to first node of the list.
  * @n: data to be added.
- * Return: returns the adress of the new node, NULL if failed.
+ * Return: returns the address of the new node, NULL if failed.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
