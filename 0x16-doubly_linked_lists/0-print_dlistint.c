@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - prints all elemets of a double linked list.
- * @h: pointer to first element of the list. 
+ * @h: pointer to first element of the list.
  * Return: returns the number of nodes.
  */
 size_t print_dlistint(const dlistint_t *h)
