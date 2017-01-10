@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - frees all elemets of a double linked list.
+ * free_dlistint - frees all elemets of a double linked list.
  * @head: pointer to first node of the list.
  * Return: returns none.
  */
