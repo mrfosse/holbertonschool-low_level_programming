@@ -4,7 +4,6 @@
  * delete_dnodeint_at_index - inserts a new node at position idx.
  * @head: pointer to first node of the list.
  * @index: position to insert new node.
- * @n: data to insert.
  * Return: returns 1 on success, -1 on fail
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -12,7 +11,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int count;
 	dlistint_t *temp, *node, *new_node;
 
-	if(head == NULL)
+	if (head == NULL)
 		return (-1);
 	node = *head;
 	for (count = 0; node->next; count++)
