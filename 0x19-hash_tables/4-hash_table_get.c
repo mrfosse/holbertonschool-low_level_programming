@@ -23,7 +23,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			return (find_node->value);
 
 		find_node = find_node->next;
-		printf("hit the while loop\n");
 	}
 	return (NULL);
 }
