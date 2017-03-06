@@ -1,3 +1,0 @@
-Doubly linked lists.
-
-Contents:
