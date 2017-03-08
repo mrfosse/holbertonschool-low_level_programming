@@ -17,7 +17,6 @@ int _strlen(char *s)
 	}
 	return (count);
 }
-
 /**
  * str_concat - concatinates two strings.
  * @s1: string 1.
@@ -35,9 +34,10 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i <= _strlen(s1); i++)
 		temp[i] = s1[i];
 	i--;
-	for (h = 0; h <= _strlen(s2); i++, h++)
+	for (h = 0; h <= _strlen(s2); h++)
 	{
 		temp[i] = s2[h];
+		i++;
 	}
 	temp[i] = '\0';
 	return (temp);
