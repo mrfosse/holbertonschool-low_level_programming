@@ -28,7 +28,8 @@ char *_strdup(char *str)
 	char *temp;
 	unsigned int i, length;
 
-
+	if (str == NULL)
+		return (NULL);
 	length = _strlen(str);
 	temp = malloc(length + 1);
 	if (temp == NULL)
