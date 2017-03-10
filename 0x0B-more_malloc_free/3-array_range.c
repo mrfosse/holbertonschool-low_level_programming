@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * aray_range - creates an array of ints.
+ * array_range - creates an array of ints.
  * @min: min size.
  * @max: max size.
  * Return: returns pointer, NULL on fail.
