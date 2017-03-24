@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * free_list - frees all elements in a list_t list.
- * @h: list to be freed.
+ * @head: list to be freed.
  * Return: NONE.
  */
 void free_list(list_t *head)
