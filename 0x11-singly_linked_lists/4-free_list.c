@@ -13,5 +13,5 @@ void free_list(list_t *head)
 		copy = head->next;
 		free(head->str);
 		free(head);
-	} 
+	}
 }
