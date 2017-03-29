@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * print_listint - adds a new node at index.
- * @head: list to be printed.
+ * get_nodeint_at_index - adds a new node at index.
+ * @head: list.
  * @index: insert new node here
- * Return: Number of nodes.
+ * Return: returns list.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
