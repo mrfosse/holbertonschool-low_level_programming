@@ -2,7 +2,7 @@
 /**
  * create_file - makes a text file.
  * @filename: file name to make.
- * @test_content: letters to be written.
+ * @text_content: letters to be written.
  * Return: 1 , otherwise -1 on fail.
  */
 int create_file(const char *filename, char *text_content)
