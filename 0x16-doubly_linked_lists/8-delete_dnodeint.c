@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * delete_dnodeint_at_index - removes node at idx position.
- * @h: pointer to list.
- * @idx: position to remove.
+ * @head: pointer to list.
+ * @index: position to remove.
  * Return: returns 1.
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
