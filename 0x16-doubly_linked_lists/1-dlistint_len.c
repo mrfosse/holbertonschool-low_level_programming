@@ -1,14 +1,14 @@
 #include "lists.h"
 /**
- * print_dlistint - prints all parts of a linked list.
+ * dlistint_len - returns the length of the list.
  * @h: pointer to list.
  * Return: returns the number of elements.
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int i;
 
 	for (i = 0; h != NULL; i++, h = h->next)
-		printf("%d\n", h->n);
+		;
 	return (i);
 }
