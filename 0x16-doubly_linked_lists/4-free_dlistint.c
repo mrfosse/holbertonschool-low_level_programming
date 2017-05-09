@@ -1,9 +1,8 @@
 #include "lists.h"
 /**
- * add_dnodeint_end - adds a node at the end.
+ * free_dlistint - frees all nodes of a list.
  * @head: pointer to list.
- * @n: data to add.
- * Return: returns the new node, otherwise NULL.
+ * Return: none.
  */
 void free_dlistint(dlistint_t *head)
 {
